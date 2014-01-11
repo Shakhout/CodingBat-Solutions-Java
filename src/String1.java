@@ -87,7 +87,7 @@ public class String1 {
 			return str;
 		}
 		else {
-			return str.substring(str.length() - 2, str.length())
+			return str.substring(str.length() - 2, str.length()) 
 					+ str.substring(0, str.length() - 2);
 		}
 	}
@@ -126,7 +126,7 @@ public class String1 {
 	
 	public boolean endsLy(String str) {
 		if (str.length() >= 2 && str.substring(str.length() - 2,
-				str.length()).equals("ly")) {
+				                 str.length()).equals("ly")) {
 			return true;
 		}
 		return false;

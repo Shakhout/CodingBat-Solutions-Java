@@ -143,9 +143,42 @@ public class Array3 {
 	}
 
 
-//	public int maxMirror(int[] nums) {
-//		// TODO
-//	}
+    public int maxMirror(int[] nums) {
+        int longest = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int mirrorSz = 0;
+            int left = i;
+            int right = -1;
+            // find right starting index
+            for (int j = nums.length - 1; j >= 0; j--) {
+                mirrorSz = 0;
+                if (nums[j] == nums[i]) {
+                    right = j;
+                    while (left < nums.length && right >= 0 && nums[left++] == nums[right--]) {
+                        mirrorSz++;
+                    }
+                    left = i;
+                    if (mirrorSz > longest) { longest = mirrorSz; }
+                }
+            }
+        }
+        return longest;
+    }
 
-	
+
+
+    public int countClumps(int[] nums) {
+        int clumps = 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if ( nums[i] == nums[i + 1] ) {
+                clumps++;
+            }
+            while ( nums[i] == nums[i + 1] && i < nums.length - 2) {
+                i++;
+            }
+        }
+        return clumps;
+    }
+
+
 }

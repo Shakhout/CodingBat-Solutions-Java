@@ -51,7 +51,7 @@ public class AP1 {
 		return (firstHalfAvg >= secondHalfAvg) ? firstHalfAvg : secondHalfAvg;
 	}
 	/** Helper method for scoresAverage */
-	public int average(int[] scores, int start, int end) {
+	private int average(int[] scores, int start, int end) {
 		int sum = 0;
 		for (int i = start; i <= end; i++) {
 			sum += scores[i];
@@ -161,7 +161,7 @@ public class AP1 {
 		return A;
 	}
 	/** Helper method for copyEndy */
-	public boolean isEndy(int num) {
+	private boolean isEndy(int num) {
 		return ( (num <= 10) || (num >= 90 && num <= 100) );
 	}
 	
@@ -215,7 +215,7 @@ public class AP1 {
 		return largestSpecial(a) + largestSpecial(b);
 	}
 	/** Helper for scoresSpecial */
-	public int largestSpecial(int[] array) {
+	private int largestSpecial(int[] array) {
 		int largestSpecial = 0;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] % 10 == 0 && array[i] > largestSpecial) {

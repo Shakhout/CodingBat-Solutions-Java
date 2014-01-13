@@ -62,7 +62,7 @@ public class Logic2 {
 		return a + b + c;
 	}
 	/** Helper method for noTeenSum */
-	public int fixTeen(int n) {
+    private int fixTeen(int n) {
 		if ( ( n >= 13 && n < 15 ) || ( n >= 17 && n <= 19 ) ) {
 			n = 0;
 		}
@@ -74,7 +74,7 @@ public class Logic2 {
 		return round10(a) + round10(b) + round10(c); 
 	}
 	/** Helper method for roundSum */
-	public int round10(int num) {
+    private int round10(int num) {
 		if (num % 10 >= 5) {
 			num = (num / 10 + 1) * 10;
 		} 

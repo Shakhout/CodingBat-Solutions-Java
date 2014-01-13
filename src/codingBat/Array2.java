@@ -412,7 +412,7 @@ public class Array2 {
 	    return nums;
 	}
 	/** Helper method for zeroMax */
-	public int largestOddR(int[] nums, int stIdx) {
+	private int largestOddR(int[] nums, int stIdx) {
 		int bigOdd = -1;
 	    for (int i = stIdx; i < nums.length; i++) {
 			if (nums[i] % 2 == 1 && nums[i] >= bigOdd) { 
@@ -434,7 +434,7 @@ public class Array2 {
 	    return nums;
 	}
 	/** Swap method used in evenOdd solution */
-	public void swap(int[] A, int idx1, int idx2) {
+	private void swap(int[] A, int idx1, int idx2) {
 	    int temp = A[idx1];
 	    A[idx1] = A[idx2];
 	    A[idx2] = temp;

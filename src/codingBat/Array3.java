@@ -40,21 +40,21 @@ public class Array3 {
 	    return nums;
 	}
 	/** Return the index of the closest 4 located after startIndex, or -1 if not found */
-	public int findNextFour(int[] nums, int startIndex) {
+	private int findNextFour(int[] nums, int startIndex) {
 	    for (int i = startIndex + 1; i < nums.length; i++) {
 	        if (nums[i] == 4) { return i; }
 	    }
 	    return -1;
 	}
 	/** Return the index of the closest 4 located before startIndex, or -1 if not found */
-	public int findPrevFour(int[] nums, int startIndex) {
+    private int findPrevFour(int[] nums, int startIndex) {
 	    for (int i = startIndex - 1; i >= 0; i--) {
 	        if (nums[i] == 4) { return i; }
 	    }
 	    return -1;
 	}
 	/** Swaps two int elements */
-	public void swap(int[] nums, int idx1, int idx2) {
+    private void swap(int[] nums, int idx1, int idx2) {
 	    int temp = nums[idx1];
 	    nums[idx1] = nums[idx2];
 	    nums[idx2] = temp;

@@ -1,11 +1,12 @@
+package codingBat;
 
 
 /**
- * Recursion-1 Section Problems See CodingBat.com for prompts
+ * Recursion-1 Section ("Basic recursion problems")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
- * @version Jan 9, 2014
+ * @version Jan 8, 2014
  */
-
 public class Recursion1 {
 	
 	
@@ -100,6 +101,7 @@ public class Recursion1 {
 		}
 		return countX(str.substring(0, str.length() - 1));
 	}
+	
 	
 	public int countHi(String str) {
 		if (str.equals("")) {

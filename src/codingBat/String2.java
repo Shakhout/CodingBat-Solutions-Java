@@ -1,11 +1,11 @@
+package codingBat;
 
 /**
- * String-2 Section Problems See CodingBat.com for prompts
- * "Medium String problems -- 1 loop."
+ * String-2 Section ("Medium String problems -- 1 loop")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class String2 {
 	
 	
@@ -322,6 +322,65 @@ public class String2 {
 		return result;
 		
 	}
+	
+	
+	public String mirrorEnds(String string) {
+		int x = 0;
+		while (x < string.length()) {
+			if (string.charAt(x) == string.charAt(string.length() - 1 - x)) {
+				x++;
+			}
+			else {
+				break;
+			}
+		}
+		return string.substring(0, x);
+	}
+	
+	
+	public int maxBlock(String str) {
+		if (str.length() == 0) { return 0; }
+		int maxRun = 1;
+		int currentRun = 1;
+		for (int i = 1; i < str.length(); i++) {
+			if (str.charAt(i) == str.charAt(i - 1)) {
+				currentRun++;
+				if (currentRun > maxRun) {
+					maxRun = currentRun;
+				}
+			} 
+			else {
+				currentRun = 1;
+			}
+		}
+		return maxRun;
+	}
+	
+	
+	public int sumNumbers(String str) {
+		int sum = 0;
+		String current = "";
+		for (int i = 0; i < str.length(); i++) {
+	    	if (Character.isDigit(str.charAt(i))) {
+	      		current += str.charAt(i);
+	      		while ( i + 1 < str.length() && Character.isDigit(str.charAt(i + 1)) ) {
+	        		current += str.charAt(i + 1);
+	        		i++;
+	      		}
+	    		sum += Integer.parseInt(current);
+	    		current = "";
+	    	}
+	  	}
+	  	return sum;
+	}
+	
+	
+	/** Using regex is best way to approach this deceptively tricky prob */
+	public String notReplace(String str) {
+		return str.replaceAll("(?<!\\w)is(?!\\w)", "is not");
+	} 
+
+
 	
 	
 }

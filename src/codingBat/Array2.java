@@ -1,10 +1,11 @@
-/** 
- * Array-2 Section Problems See CodingBat.com for prompts 
- * Medium array problems -- 1 loop
- * @author Navid Rojiani
- * @version Jan 9, 2014
- */
+package codingBat;
 
+/**
+ * Array-2 Section ("Medium array problems -- 1 loop")
+ * See CodingBat.com for prompts.
+ * @author Navid Rojiani
+ * @version Jan 8, 2014
+ */
 public class Array2 {
 	
 	public int countEvens(int[] nums) {
@@ -17,6 +18,7 @@ public class Array2 {
 		return evens;
 	}
 	
+	
 	public int bigDiff(int[] nums) {
 		int min = nums[0];
 		int max = nums[0];
@@ -26,6 +28,7 @@ public class Array2 {
 		}
 		return Math.abs(max - min);
 	}
+	
 	
 	public int centeredAverage(int[] nums) {
 		// get min & max
@@ -271,7 +274,6 @@ public class Array2 {
 	}
 	
 	
-	
 	public boolean sameEnds(int[] nums, int len) {
 		for (int i = 0; i < len; i++) {
 			if (nums[i] != nums[nums.length - len + i]) {
@@ -409,7 +411,6 @@ public class Array2 {
 	    }
 	    return nums;
 	}
-	
 	/** Helper method for zeroMax */
 	public int largestOddR(int[] nums, int stIdx) {
 		int bigOdd = -1;
@@ -432,8 +433,6 @@ public class Array2 {
 	    }
 	    return nums;
 	}
-
-	
 	/** Swap method used in evenOdd solution */
 	public void swap(int[] A, int idx1, int idx2) {
 	    int temp = A[idx1];

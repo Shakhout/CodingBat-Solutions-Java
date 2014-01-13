@@ -1,11 +1,12 @@
+package codingBat;
 
 
 /**
- * Array-1 Section Problems See CodingBat.com for prompts
+ * Array-1 Section ("Basic array problems -- no loops")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class Array1 {
 	
 	
@@ -50,8 +51,6 @@ public class Array1 {
 		nums[nums.length - 1] = temp;
 		return nums;
 	}
-	
-	
 	/** Shift array elements left one index - new array version */
 	public int[] rotateLeft3_newArray(int[] nums) {
 		int[] result = new int[nums.length];
@@ -60,16 +59,6 @@ public class Array1 {
 			result[i] = nums[i + 1];
 		}
 		return result;
-	}
-	
-	
-	/** Reverse an array - with a new array */
-	public int[] reverse3(int[] nums) {
-		int[] newA = new int[nums.length];
-		for (int i = nums.length - 1; i >= 0; i--) {
-			newA[nums.length - 1 - i] = nums[i];
-		}
-		return newA;
 	}
 	
 	
@@ -87,6 +76,14 @@ public class Array1 {
 			j--;
 		}
 		return nums;
+	}
+	/** Reverse an array - with a new array */
+	public int[] reverse3(int[] nums) {
+		int[] newA = new int[nums.length];
+		for (int i = nums.length - 1; i >= 0; i--) {
+			newA[nums.length - 1 - i] = nums[i];
+		}
+		return newA;
 	}
 	
 	

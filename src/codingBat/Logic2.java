@@ -1,7 +1,9 @@
+package codingBat;
 
 
 /**
- * Logic-2 Section Problems See CodingBat.com for prompts
+ * Logic-2 Section ("Medium boolean logic puzzles")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
@@ -43,6 +45,7 @@ public class Logic2 {
 			else					return b;
 		}
 	}
+	
 	
 	public int luckySum(int a, int b, int c) {
 		if (a == 13)        { return 0; }

@@ -1,11 +1,11 @@
-
+package codingBat;
 
 /**
- * Logic-1 Section Problems See CodingBat.com for prompts
+ * Logic-1 Section ("Basic boolean logic puzzles -- if else && || !")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class Logic1 {
 	
 	
@@ -224,9 +224,9 @@ public class Logic1 {
 	
 	
 	public boolean lessBy10(int a, int b, int c) {
-		return a + 10 <= b || a + 10 <= c || 
-				b + 10 <= a || b + 10 <= c ||
-				c + 10 <= a || c + 10 <= b;
+        return a + 10 <= b || a + 10 <= c || 
+               b + 10 <= a || b + 10 <= c ||
+               c + 10 <= a || c + 10 <= b;
 	}
 	
 	

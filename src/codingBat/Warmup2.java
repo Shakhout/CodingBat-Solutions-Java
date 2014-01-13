@@ -1,9 +1,10 @@
+package codingBat;
 /**
- * Warmup-2 Section Problems See CodingBat.com for prompts
+ * Warmup-2 Section ("Medium warmup string/array loops")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class Warmup2 {
 	
 	

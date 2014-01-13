@@ -1,9 +1,11 @@
+package codingBat;
+
 /**
- * String-1 Section Problems See CodingBat.com for prompts
+ * String-1 Section ("Basic string problems -- no loops")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class String1 {
 	
 	

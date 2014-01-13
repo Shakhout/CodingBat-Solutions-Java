@@ -1,9 +1,10 @@
+package codingBat;
 /**
- * Warmup-1 Section Problems See CodingBat.com for prompts
+ * Warmup-1 Section ("Simple warmup problems to get started")
+ * See CodingBat.com for prompts.
  * @author Navid Rojiani
  * @version Jan 8, 2014
  */
-
 public class Warmup1 {
 	
 	

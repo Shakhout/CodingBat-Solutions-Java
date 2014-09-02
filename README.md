@@ -1,5 +1,5 @@
-CodingBat-Problems
-==================
+CodingBat Solutions (Java)
+==========================
 
 Solutions to CodingBat.com problems in Java. 
 
